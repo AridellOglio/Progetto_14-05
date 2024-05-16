@@ -4,6 +4,17 @@ library(readxl)
 library(tidyverse)
 library(janitor)
 
+
+library(usethis)
+library(gitcreds)
+library(git2r)
+
+gitcreds_set()
+use_git()
+git2r::config(user.name = "AridellOglio")
+git2r::config(user.email = "arianna.delloglio2@unibo.it")
+use_github()
+
 #prima sezione: esempio matrice --------
 
 #la matrice è un oggetto atomico; se ha bisogno di far convivere oggetti
